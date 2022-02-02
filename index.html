@@ -15,7 +15,16 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=345670199824199&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-
-<button> Purchase</button>
-<button> Add to Cart</button>
-<button> View Content</button>
+<script type="text/Javascript">
+  window.onload=function(){
+    const total = Math.round(50 + Math.random() * 95000) / 100;
+    document.getElementById("total").innerHTML = total;
+  }
+</script>
+<body>
+  <button>Purchase</button>
+  <button>Add to Cart</button>
+  <button>View Content</button>
+  <div>Total:</div>
+  <div id="total"></div>
+</body>
